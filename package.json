@@ -1,0 +1,14 @@
+{
+  "name": "tutorconnect",
+  "private": true,
+  "workspaces": [
+    "tutorconnect-frontend",
+    "tutorconnect-backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm --prefix tutorconnect-frontend run dev\" \"npm --prefix tutorconnect-backend run dev\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
